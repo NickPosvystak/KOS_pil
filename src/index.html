@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KOS_pilot</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <!-- <load src="./partials/header.html" /> -->
+
+    <!-- header -->
+
     <header class="header-container">
       <div class="header">
         <nav class="header-nav">
           <a href="" class="header-link"></a>
+          <svg class="drone-icon" width="20" height="20">
+            <use href="./images/symbol-defs.svg#icon-drone"></use>
+          </svg>
             <span class="header-logo">MAVIC</span>
             <ul class="header-list">
               <li class="header-item">
@@ -19,7 +25,7 @@
               </li>
 
               <li class="header-item">
-                <a href="" class="header-page">About</a>
+                <a href="" class="header-page">Video</a>
               </li>
 
               <li class="header-item">
@@ -32,10 +38,30 @@
                       <a href="tel:+4550231091" class="address-link">+4550231091</a>
                     </li>
                     <li class="address-item">
-                      <a href="mailto:polikon86@gmail.com" class="address-link">polikon86@gmail.com"</a>
+                      <a href="mailto:polikon86@gmail.com" class="address-link">polikon86@gmail.com</a>
                     </li>
                   </ul>
                 </address>
+                  <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="icon-menu"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="./images/icon.svg#icon-menu"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
              
              
           
@@ -43,6 +69,121 @@
       </div>
     </header>
 
-    <!-- <script src="index.js" type="module"></script> -->
+    <!-- Hero -->
+    <section class="hero-container">
+      <div class="hero">
+        <button class="hero-btn" type="button">Bestil en filmoptagelse</button> 
+       
+       
+      </div> 
+      <p class="hero-title">Vil du får en professionel filmoptagelse fra en drone med høj kvalitet og utrolige fotos og videoer er lavet i god kvalitet? Jeg har et stort katalog over forskellige optagelser, som jeg kan gøre til virkelighed i ethvert af dine ønsker, hvis du vil for at bestille en optagelse, kontakt mig</p>
+    </section>
+    
+   
+
+    <!-- Main -->
+<section class="main-container">
+  <div class="main-box">
+    <ul class="img-box">
+    <li class="main-img-item">
+      <img class="main-img" src="./images/01.jpg" alt="No image">
+    </li>
+    <li class="main-img-item">
+      <img class="main-img" src="./images/02.jpg" alt="No image" >
+    </li>
+    <li class="main-img-item">
+      <img class="main-img" src="./images/03.jpg" alt="No image" >
+    </li>
+    <li class="main-img-item">
+      <img class="main-img" src="./images/04.jpg" alt="No image" >
+    </li>
+    <li class="main-img-item">
+      <img class="main-img" src="./images/05.jpg" alt="No image" >
+    </li>
+    <li class="main-img-item">
+      <img class="main-img" src="./images/06.jpg" alt="No image" >
+    </li>
+    <li class="main-img-item">
+      <img class="main-img" src="./images/07.jpg" alt="No image" >
+    </li>
+    <li class="main-img-item">
+      <img class="main-img" src="./images/08.jpg" alt="No image" >
+    </li>
+    <li class="main-img-item">
+      <img class="main-img" src="./images/09.jpg" alt="No image" >
+    </li>
+     </ul>
+ 
+ 
+</section>
+
+
+
+
+  <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu" type="button" data-modal-close>
+        <svg class="menu-icon" width="8" height="8">
+          <use href="./images/symbol-defs.svg#icon-x-close">X</use>
+        </svg>
+      </button>
+
+      <ul class="mobile-link-list list">
+        <li class="mobile-link-item">
+          <a class="mobile-link current link" href="./index.html">Studio</a>
+        </li>
+        <li class="mobile-link-item">
+          <a class="mobile-link link" href="#Portfolio">Portfolio</a>
+        </li>
+        <li class="mobile-link-item">
+          <a class="mobile-link link" href="">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts-list list">
+        <li class="mobile-contact-item">
+          <a class="mobile-contact-tel link" href="tel:+4550231091"
+            >+4550231091</a
+          >
+        </li>
+        <li class="mobile-contact-item">
+          <a class="mobile-contact-post link" href="mailto:polikon86@gmail.com"
+            >polikon86@gmail.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-icon-list list">
+               <li class="icon-media-mobile">
+          <a
+            class="social-link-mobile link"
+            href="https://Yotube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Yotube icon"
+          >
+            <svg class="icon-social" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icon-media-mobile">
+          <a
+            class="social-link-mobile link"
+            href="https://Facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook icon"
+          >
+            <svg class="icon-social" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+       
+      </ul>
+    </div>
+
+    <script src="index.js" type="module"></script>
   </body>
 </html>
