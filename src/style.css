@@ -109,7 +109,11 @@ h6 {
 .header-nav {
   display: flex;
 }
-
+.header-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .header-logo {
   margin-right: 20px;
 }
@@ -136,8 +140,7 @@ h6 {
   }
 }
 
-
-.header-page.current{
+.header-page.current {
   color: darkorange;
 }
 
@@ -146,12 +149,21 @@ h6 {
   | Hero
   |============================
 */
-
+header {
+  animation-duration: 3000ms;
+  animation-name: slidein;
+}
 .hero {
   margin-right: auto;
   margin-left: auto;
   padding: 180px 0 20px 0;
   max-width: 428px;
+}
+@keyframes slidein {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+  }
 }
 @media only screen and (max-width: 428px) {
   .hero {
@@ -345,17 +357,14 @@ h6 {
   padding: 0;
 }
 
-
-
-
 /**
   |============================
   | Footer
   |============================
 */
 
-.footer-title{
-    text-align: center;
+.footer-title {
+  text-align: center;
 }
 /**
   |============================

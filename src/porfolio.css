@@ -110,6 +110,11 @@ h6 {
   display: flex;
 }
 
+.header-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .header-logo {
   margin-right: 20px;
 }
@@ -136,13 +141,9 @@ h6 {
   }
 }
 
-
-.header-page.current{
+.header-page.current {
   color: darkorange;
 }
-
-
-
 
 /**
   |============================
@@ -150,8 +151,8 @@ h6 {
   |============================
 */
 
-.footer-title{
-    text-align: center;
+.footer-title {
+  text-align: center;
 }
 
 /**
