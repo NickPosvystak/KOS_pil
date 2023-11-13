@@ -273,7 +273,7 @@ header {
 .main-img {
   border: 1px solid black;
   border-radius: 6px;
-  width: 250px;
+  width: 300px;
   /* height: 200px; */
 }
 @media only screen and (min-width: 768px) {
@@ -362,9 +362,60 @@ header {
   | Footer
   |============================
 */
+.footer-container {
+  min-width: 320px;
+  padding: 10px;
+  background-color: aliceblue;
+}
+.footer-box {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+}
+
+.footer-list {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 5px;
+}
+@media only screen and (min-width: 768px) {
+  .footer-list {
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+  }
+}
+.footer-item {
+  background-color: aliceblue;
+}
+.footer-item .footer-link-icon:hover {
+
+}
+.footer-icon {
+ 
+}
+
+.footer-icon:hover {
+}
 
 .footer-title {
   text-align: center;
+  font-size: 12px;
+}
+
+.address-box-footer {
+}
+.address-list-footer {
+}
+.address-item-footer {
+  padding-bottom: 12px;
+}
+.address-link-footer {
 }
 /**
   |============================
@@ -413,6 +464,12 @@ header {
   padding-right: 35px;
   padding-bottom: 40px;
   background-color: #fff;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    13deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
   z-index: 999;
 
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
