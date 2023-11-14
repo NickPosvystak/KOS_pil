@@ -88,8 +88,18 @@ h6 {
       |============================
       | Header
       |============================
-    */
+      */
 
+header {
+  animation-duration: 3000ms;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+  }
+}
 .header-container {
   position: fixed;
   width: 100%;
@@ -149,21 +159,19 @@ h6 {
   | Hero
   |============================
 */
-header {
-  animation-duration: 3000ms;
-  animation-name: slidein;
+.hero-box {
+  width: 320px;
+  height: 404px;
+
+  background: url(./images/mob_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .hero {
   margin-right: auto;
   margin-left: auto;
   padding: 180px 0 20px 0;
   max-width: 428px;
-}
-@keyframes slidein {
-  0% {
-    margin-left: 100%;
-    width: 300%;
-  }
 }
 @media only screen and (max-width: 428px) {
   .hero {
@@ -208,22 +216,41 @@ header {
 }
 
 .hero-container {
+  padding-top: 50px;
 }
-.hero-title {
-  max-width: 290px;
-  margin: 10px auto;
-
+.hero-main-title {
+  font-size: 21px;
+  font-style: normal;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  /* text-transform: capitalize; */
+  line-height: normal;
+  width: 320px;
 
   color: black;
+
+  padding: 10px;
 }
+.hero-main-title-add {
+  color: rgba(41, 27, 27, 0.5);
+
+  font-family: Sen;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero-text {
+  color: black;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 10px;
+}
+
 @media screen and (min-width: 768px) {
-  .hero-title {
+  .hero-text {
     max-width: 496px;
     margin: 12px auto;
     font-size: 20px;
@@ -231,7 +258,7 @@ header {
   }
 }
 @media screen and (min-width: 1440px) {
-  .hero-title {
+  .hero-text {
     margin: 15px auto;
   }
 }
@@ -251,12 +278,81 @@ header {
 
 /**
   |============================
-  | Main container
+  | My projects
+  |============================
+*/
+
+.projects {
+  padding: 20px 10px;
+}
+.projects-desc {
+  color: #8491a0;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.projects-title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 8px;
+  padding-bottom: 30px;
+}
+.projects-list {
+}
+.projects-item {
+}
+.project-image {
+}
+.image-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  /* width: 256px; */
+  padding: 16 32 13 32;
+}
+.image-description {
+  color: #8491a0;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  /* width: 256px; */
+  padding: 13 32 40 32;
+}
+/**
+  |============================
+  | Photo container
   |============================
 */
 
 .main-container {
   /* padding-top: 60px; */
+}
+.main-title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  padding: 5 10 24 10;
+}
+.main-title-desc {
+  color: #8491a0;
+
+  font-family: Sen;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+
+  padding: 10px;
 }
 .main-box {
   padding-bottom: 20px;
@@ -293,6 +389,69 @@ header {
   }
 }
 
+/**
+  |============================
+  | Message form
+  |============================
+*/
+
+.form {
+  padding: 10px;
+}
+.form-main-title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 10 10 15 10;
+}
+.form-title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.form-desc {
+  color: #8491a0;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 16 10 20 10;
+}
+.form-box {
+  width: 300px;
+  padding: 10px 20px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.name-sub {
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+.email-sub {
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+.message-sub {
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+.form-btn {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #5221e6;
+  padding: 24px 32px;
+  border-radius: 4px;
+  width: 100%;
+}
 /**
   |============================
   | Mobile style
@@ -394,10 +553,8 @@ header {
   background-color: aliceblue;
 }
 .footer-item .footer-link-icon:hover {
-
 }
 .footer-icon {
- 
 }
 
 .footer-icon:hover {

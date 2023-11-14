@@ -79,10 +79,15 @@
 
     <!-- Hero -->
     <article class="hero-container">
-      <div class="hero">
+      <div class="hero-box"></div>
+      <h3 class="hero-main-title">
+        I’m Konstantyn Polishkevych. A Product Designer
+        <span class="hero-main-title-add">based in Demark.</span>
+      </h3>
+      <!-- <div class="hero">
         <button class="hero-btn" type="button">Bestil en filmoptagelse</button>
-      </div>
-      <p class="hero-title">
+      </div> -->
+      <p class="hero-text">
         Vil du får en professionel filmoptagelse fra en drone med høj kvalitet
         og utrolige fotos og videoer er lavet i god kvalitet? Jeg har et stort
         katalog over forskellige optagelser, som jeg kan gøre til virkelighed i
@@ -91,8 +96,67 @@
       </p>
     </article>
 
-    <!-- Main -->
+    <!-- My projects -->
+
+    <section class="projects">
+      <p class="projects-desc">MY PROJECTS</p>
+      <h2 class="projects-title">Work that I’ve done for the past ?? years</h2>
+
+      <ul class="projects-list">
+        <li class="projects-item">
+          <img
+            src="./images/man_1.jpg"
+            alt=""
+            width="300px"
+            class="project-image"
+          />
+          <h3 class="image-title">Name of Work?</h3>
+          <p class="image-description">
+            I worked with the guys at CBRE to redesign their entire website and
+            mobile app fro both Android and iOS. This project lasted for 4
+            months and was a very challenging one.
+          </p>
+        </li>
+        <li class="projects-item">
+          <img
+            src="./images/man_2.jpg"
+            alt=""
+            width="300px"
+            class="project-image"
+            class="image-title"
+          />
+          <h3 class="image-title">Name of Work?</h3>
+          <p class="image-description">
+            I worked with the guys at CBRE to redesign their entire website and
+            mobile app fro both Android and iOS. This project lasted for 4
+            months and was a very challenging one.
+          </p>
+        </li>
+        <li class="projects-item">
+          <img
+            src="./images/man_3.jpg"
+            alt=""
+            width="300px"
+            class="project-image"
+            class="image-title"
+          />
+          <h3 class="image-title">Name of Work?</h3>
+          <p class="image-description">
+            I worked with the guys at CBRE to redesign their entire website and
+            mobile app fro both Android and iOS. This project lasted for 4
+            months and was a very challenging one.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Photo -->
     <section class="main-container">
+      <h4 class="main-title">Billeder</h4>
+      <p class="main-title-desc">
+        Here is a collection of my best pictures that I took while traveling
+        places all around the world.
+      </p>
       <div class="main-box">
         <ul class="img-box">
           <li class="main-img-item">
@@ -169,6 +233,43 @@
           </li>
         </ul>
       </div>
+    </section>
+
+    <!-- Message form -->
+
+    <section class="form">
+      <h4 class="form-main-title">Let’s get started</h4>
+      <p class="form-desc">Now that you know a lot about me, let me know if you are interested to work with me.</p>
+      <form  action="mailto:someone@example.com" method="post" enctype="text/plain" class="form-box">
+        <p class="form-title">Name</p>
+        <label for="form-name"></label>
+        <input
+          type="text"
+          name="name"
+          id="form-name"
+          class="name-sub"
+          placeholder=" Name"
+        />
+        <p class="form-title">Email</p>
+        <label for="form-email"></label>
+        <input
+          type="email"
+          name="email"
+          id="form-email"
+          class="email-sub"
+          placeholder=" E-mail"
+        />
+        <p class="form-title">Message</p>
+        <label for="form-message"></label>
+        <textarea
+          name="message"
+          id="form-message"
+            rows="5"
+          class="message-sub"
+          placeholder=" Skriv din besked..."></textarea>
+        
+        <button class="form-btn" type="submit">Send</button>
+      </form>
     </section>
 
     <!-- footer -->
