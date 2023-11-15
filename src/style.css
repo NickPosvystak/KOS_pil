@@ -107,6 +107,7 @@ header {
   padding: 10px;
   height: 50px;
   border-bottom: 1px solid gray;
+  z-index: 1;
 }
 
 .drone-icon {
@@ -158,16 +159,9 @@ header {
   |============================
   | Hero
   |============================
-*/
-.hero-box {
-  width: 320px;
-  height: 404px;
-
-  background: url(./images/mob_1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.hero {
+  */
+/* 
+  .hero {
   margin-right: auto;
   margin-left: auto;
   padding: 180px 0 20px 0;
@@ -213,11 +207,20 @@ header {
     background-position: center;
     background-size: cover;
   }
-}
+} */
 
 .hero-container {
   padding-top: 50px;
 }
+.hero-box {
+  width: 320px;
+  height: 404px;
+
+  background: url(./images/mob_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .hero-main-title {
   font-size: 21px;
   font-style: normal;
@@ -276,8 +279,47 @@ header {
   background: #4d5ae5;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    position: relative;
+    width: 768px;
+    display: inline-flex;
+    padding: 80px 40px 84px 50px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-box {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  .hero-main-title {
+    width: 310px;
+    position: absolute;
+    top: 126px;
+    right: 112px;
+
+    font-size: 27px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  }
+  .hero-main-title-add {
+    font-size: 27px;
+  }
+  .hero-text {
+    width: 454px;
+    position: absolute;
+    top: 400px;
+    right: 80px;
+    font-size: 18px;
+
+    background-color: #f9f5f5;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+      rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  }
+}
 /**
-  |============================
+|============================
   | My projects
   |============================
 */
@@ -307,6 +349,7 @@ header {
 .projects-item {
 }
 .project-image {
+  width: 300px;
 }
 .image-title {
   font-size: 24px;
@@ -325,6 +368,19 @@ header {
   line-height: 27px;
   /* width: 256px; */
   padding: 13 32 40 32;
+}
+@media only screen and (min-width: 768px) {
+  .projects {
+    padding: 20 40;
+  }
+  .project-image {
+    width: 688px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image-description {
+    width: 620px;
+  }
 }
 /**
   |============================
@@ -423,7 +479,7 @@ header {
 .form-box {
   width: 300px;
   padding: 10px 20px;
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .name-sub {
   width: 100%;

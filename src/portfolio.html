@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KOS_pilot</title>
-    <link rel="stylesheet" href="./porfolio.css">
+    <link rel="stylesheet" href="./porfolio.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -14,39 +14,43 @@
     />
   </head>
   <body>
-        <!-- header -->
+    <!-- header -->
 
     <header class="header-container">
       <div class="header">
         <nav class="header-nav">
-         <a href="index.html" width="20" height="20" class="header-link">
-            <img src="./images/drone3.png" width="50"   alt="">
+          <a href="index.html" width="20" height="20" class="header-link">
+            <img src="./images/drone3.png" width="50" alt="" />
             <span class="header-logo">DJI MAVIC</span>
           </a>
-            <ul class="header-list">
-              <li class="header-item">
-                <a href="./index.html" class="header-page">Main</a>
-              </li>
 
-              <li class="header-item">
-                <a href="./portfolio.html" class="header-page current">Portfolio</a>
-              </li>
+          <ul class="header-list">
+            <li class="header-item">
+              <a href="./index.html" class="header-page current">Main</a>
+            </li>
 
-              <li class="header-item">
-                <a href="" class="header-page">Feedback</a> </li>
-              
-               </nav>
-                <address class="address-box">
-                  <ul class="address-list">
-                    <li class="address-item">
-                      <a href="tel:+4550231091" class="address-link">+4550231091</a>
-                    </li>
-                    <li class="address-item">
-                      <a href="mailto:polikon86@gmail.com" class="address-link">polikon86@gmail.com</a>
-                    </li>
-                  </ul>
-                </address>
-                  <button
+            <li class="header-item">
+              <a href="./portfolio.html" class="header-page">Portfolio</a>
+            </li>
+
+            <li class="header-item">
+              <a href="" class="header-page">Feedback</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address-box">
+          <ul class="address-list">
+            <li class="address-item">
+              <a href="tel:+4550231091" class="address-link">+4550231091</a>
+            </li>
+            <li class="address-item">
+              <a href="mailto:polikon86@gmail.com" class="address-link"
+                >polikon86@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <button
           class="menu-toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
@@ -66,26 +70,116 @@
             ></path>
           </svg>
         </button>
-                 
-
+      </div>
     </header>
 
-<!-- Main section -->
+    <!-- Video section -->
 
-<section>
-     <iframe
-      id="vimeo-player"
-      src="https://player.vimeo.com/video/236203659"
-      width="640"
-      height="360"
-      frameborder="0"
-      allowfullscreen
-      allow="autoplay; encrypted-media"
-    ></iframe>
-</section>
+    <section class="video-container">
+      <p class="projects-desc">MY PROJECTS</p>
+      <h2 class="projects-title">
+        I think everyone wants the same thing - relationship with humanity,
+        peace with the metaphysical, and experience with the universe. I try to
+        grasp these things with my values: authenticity, creativity, &
+        hospitality.
+      </h2>
+      <div class="video-box">
+        <video class="local-video" autoplay muted controls lazy="lazy">
+          <source src="./images/video/04.mp4" type="video/mp4" />
+        </video>
+        <video class="local-video" muted controls>
+          <source src="./images/video/01.mp4" type="video/mp4" />
+        </video>
+        <video class="local-video" autoplay muted controls>
+          <source src="./images/video/07.mp4" type="video/mp4" />
+        </video>
+        <video class="local-video" autoplay muted controls>
+          <source src="./images/video/03.mp4" type="video/mp4" />
+        </video>
+        <video class="local-video" autoplay muted controls>
+          <source src="./images/video/05.mp4" type="video/mp4" />
+        </video>
+        <video class="local-video" autoplay muted controls>
+          <source src="./images/video/06.mp4" type="video/mp4" />
+        </video>
+        <video class="local-video" autoplay muted controls>
+          <source src="./images/video/DSC_0326.MOV" type="video/mp4" />
+        </video>
+        <video class="local-video" autoplay muted controls>
+          <source src="./images/video/05.mp4" type="video/mp4" />
+        </video>
+        <video class="local-video" autoplay muted controls>
+          <source src="./images/video/06.mp4" type="video/mp4" />
+        </video>
+        <video class="local-video" autoplay muted controls>
+          <source src="./images/video/DSC_0326.MOV" type="video/mp4" />
+        </video>
 
+        <!-- <iframe
+          class="player"
+          id="vimeo-player"
+          src="https://www.youtube.com/embed/m1FNcNvboSg"
+          frameborder="0"
+          allowfullscreen
+          allow="autoplay; encrypted-media"
+        ></iframe>
+        <iframe
+          class="player"
+          id="vimeo-player"
+          src="https://www.youtube.com/embed/r5kukRMmZNI?t=17"
+          frameborder="0"
+          allowfullscreen
+          allow="autoplay; encrypted-media"
+        ></iframe> -->
+      </div>
+    </section>
 
- <!-- Mobile menu -->
+    <!-- footer -->
+
+    <footer class="footer-container">
+      <div class="footer-box">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a href="#" noreferrer noopener class="footer-link-icon"
+              ><svg class="footer-icon" width="30" height="30">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
+            ></a>
+          </li>
+          <li class="footer-item">
+            <a href="#" noreferrer noopener class="footer-link-icon"
+              ><svg class="footer-icon" width="30" height="30">
+                <use href="./images/symbol-defs.svg#icon-youtube"></use></svg
+            ></a>
+          </li>
+          <li class="footer-item">
+            <a href="#" noreferrer noopener class="footer-link-icon"
+              ><svg class="footer-icon" width="30" height="30">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
+            ></a>
+          </li>
+        </ul>
+        <address class="address-box-footer">
+          <ul class="address-list-footer">
+            <li class="address-item-footer">Konstantyn Polishkevych</li>
+            <li class="address-item-footer">
+              <a href="tel:+4550231091" class="address-link-footer"
+                >+4550231091</a
+              >
+            </li>
+            <li class="address-item-footer">
+              <a href="mailto:polikon86@gmail.com" class="address-link-footer"
+                >polikon86@gmail.com</a
+              >
+            </li>
+            <li class="address-item-footer">Hurup Thy</li>
+          </ul>
+        </address>
+      </div>
+
+      <p class="footer-title">2023. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Mobile menu -->
 
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu" type="button" data-modal-close>
@@ -120,7 +214,7 @@
       </ul>
 
       <ul class="mobile-icon-list list">
-               <li class="icon-media-mobile">
+        <li class="icon-media-mobile">
           <a
             class="social-link-mobile link"
             href="https://Yotube.com"
@@ -146,16 +240,10 @@
             </svg>
           </a>
         </li>
-       
       </ul>
     </div>
-          
-       
-      </div>
-
-
 
     <script src="index.js" type="module"></script>
-
+    <script type="module" src="./js/video.js"></script>
   </body>
 </html>

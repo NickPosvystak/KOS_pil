@@ -90,8 +90,21 @@ h6 {
       |============================
     */
 
+header {
+  animation-duration: 3000ms;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  0% {
+    margin-left: 100%;
+    width: 300%;
+  }
+}
+
 .header-container {
   position: fixed;
+  /* position: relative; */
+  z-index: 1;
   width: 100%;
   background-color: white;
   padding: 10px;
@@ -147,12 +160,103 @@ h6 {
 
 /**
   |============================
-  | Footer
+  | Video section
   |============================
 */
 
+.video-container {
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+.projects-desc {
+  color: #8491a0;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 20 10 8 10;
+}
+.projects-title {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 8 10 15 10;
+}
+
+.player {
+  width: 300px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+}
+.local-video {
+  width: 300px;
+  padding-bottom: 10px;
+ 
+}
+
+
+/**
+  |============================
+  | Footer
+  |============================
+*/
+.footer-container {
+  min-width: 320px;
+  padding: 10px;
+  background-color: aliceblue;
+}
+.footer-box {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+}
+
+.footer-list {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 5px;
+}
+@media only screen and (min-width: 768px) {
+  .footer-list {
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+  }
+}
+.footer-item {
+  background-color: aliceblue;
+}
+.footer-item .footer-link-icon:hover {
+}
+.footer-icon {
+}
+
+.footer-icon:hover {
+}
+
 .footer-title {
   text-align: center;
+  font-size: 12px;
+}
+
+.address-box-footer {
+}
+.address-list-footer {
+}
+.address-item-footer {
+  padding-bottom: 12px;
+}
+.address-link-footer {
 }
 
 /**
