@@ -13,6 +13,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('hHZMSD_9pTLOeZMcD');
+      })();
+    </script>
     <!-- <link rel="icon" type="image/svg" href="./images/drone.svg" /> -->
   </head>
   <body>
@@ -102,12 +111,7 @@
 
       <ul class="projects-list">
         <li class="projects-item">
-          <img
-            src="./images/man_1.jpg"
-            alt=""
-            
-            class="project-image"
-          />
+          <img src="./images/man_1.jpg" alt="" class="project-image" />
           <h3 class="image-title">Name of Work?</h3>
           <p class="image-description">
             I worked with the guys at CBRE to redesign their entire website and
@@ -158,6 +162,7 @@
       <div class="main-box">
         <ul class="img-box">
           <li class="main-img-item">
+            <a href="images/01.jpg"></a>
             <img
               class="main-img"
               src="./images/01.jpg"
@@ -242,7 +247,8 @@
         work with me.
       </p>
       <form
-        action="mailto:someone@example.com"
+        id="submitForm"
+        action="mailto:posvystak83@gmail.com"
         method="post"
         enctype="text/plain"
         class="form-box"
@@ -275,7 +281,9 @@
           placeholder=" Skriv din besked..."
         ></textarea>
 
-        <button class="form-btn" type="submit">Send</button>
+        <button class="form-btn" type="submit" onclick="sendEmail()">
+          Send
+        </button>
       </form>
     </section>
 
@@ -387,6 +395,7 @@
       </ul>
     </div>
 
+    <script src="./js/gallery.js" type="module"></script>
     <script src="index.js" type="module"></script>
   </body>
 </html>

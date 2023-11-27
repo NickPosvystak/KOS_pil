@@ -215,27 +215,36 @@ header {
 .hero-box {
   width: 320px;
   height: 404px;
-
+  
   background: url(./images/mob_1.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+  rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-
 .hero-main-title {
-  font-size: 21px;
+  width: 300px;
+
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  width: 320px;
-
+  font-size: 27px;
   color: black;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+    margin-bottom: 16px;
 
   padding: 10px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
+
 .hero-main-title-add {
   color: rgba(41, 27, 27, 0.5);
 
-  font-family: Sen;
   font-size: 21px;
   font-style: normal;
   font-weight: 700;
@@ -245,39 +254,21 @@ header {
 .hero-text {
   color: black;
 
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 20px;
   padding: 10px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+
+  background-color: #f9f5f5;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
-@media screen and (min-width: 768px) {
-  .hero-text {
-    max-width: 496px;
-    margin: 12px auto;
-    font-size: 20px;
-    line-height: 1.07;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .hero-text {
-    margin: 15px auto;
-  }
-}
-.hero-btn {
-  display: block;
-  min-width: 169px;
-  height: 36px;
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  margin: 0 auto;
-  cursor: pointer;
-
-  color: #fff;
-  background: #4d5ae5;
-}
 
 @media only screen and (min-width: 768px) {
   .hero-container {
@@ -287,40 +278,67 @@ header {
     padding: 80px 40px 84px 50px;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
   }
   .hero-box {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   }
   .hero-main-title {
-    width: 310px;
     position: absolute;
-    top: 126px;
-    right: 112px;
-
-    font-size: 27px;
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-  }
-  .hero-main-title-add {
-    font-size: 27px;
+    font-size: 42px;
+    width: 390px;
+    height: 240px;
+    top: 96px;
+    right: 48px;
+    border-radius: 4px;
   }
   .hero-text {
-    width: 454px;
     position: absolute;
-    top: 400px;
-    right: 80px;
+    width: 494px;
+    margin: 12px auto;
     font-size: 18px;
-
-    background-color: #f9f5f5;
-    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
-      rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    line-height: 1.07;
+    top: 373px;
+    right: 46px;
+    border-radius: 4px;
+  }
+  .hero-main-title-add {
   }
 }
+@media only screen and (min-width: 1440px) {
+  .hero-container {
+    width: 1440px;
+  }
+  .hero-box {
+    width: 750px;
+    height: 650px;
+  }
+  .hero-main-title {
+    width: 738px;
+    height: 430px;
+    font-size: 78px;
+    top: 112px;
+    right: 40px;
+    border-radius: 6px;
+  }
+  .hero-main-title-add {
+    font-size: 78px;
+  }
+  .hero-text {
+    /* margin: 15px auto; */
+    font-size: 18px;
+    width: 736px;
+    font-weight: 400;
+    line-height: 27px;
+    top: 570px;
+    right: 42px;
+    border-radius: 6px;
+  }
+}
+
 /**
 |============================
-  | My projects
+| My projects
   |============================
 */
 
@@ -380,6 +398,10 @@ header {
   }
   .image-description {
     width: 620px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .projects-list {
   }
 }
 /**
