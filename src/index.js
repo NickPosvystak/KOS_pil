@@ -1,4 +1,4 @@
-import bodyScrollLock from 'body-scroll-lock';
+// import bodyScrollLock from 'body-scroll-lock';
 
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
