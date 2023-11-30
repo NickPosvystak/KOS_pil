@@ -32,19 +32,19 @@ function onClick(event) {
   let instance = null;
 
   if (event.target.nodeName !== 'IMG') return;
-  
+
   instance = basicLightbox.create(
     `
     <img src='${event.target.dataset.source}' width="800" height="600">
     `,
     {
       onShow: () => {
-        document.body.addEventListener('keydown', closeOnEsc);
+        document.body.addEventListener('keydown', onClose);
       },
     },
     {
       onClose: () => {
-        document.body.removeEventListener('keydown', closeOnEsc);
+        document.body.removeEventListener('keydown', onClose);
         instance = null;
       },
     }
@@ -52,7 +52,7 @@ function onClick(event) {
   instance.show();
 }
 
-function closeOnEsc(event) {
+function onClose(event) {
   if (event.key === 'Escape') {
     instance.close();
   }
