@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KOS_pilot</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.css"
-    /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
-    />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.css"
+        /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -21,6 +22,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
+    />
+
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -30,14 +36,13 @@
         emailjs.init('hHZMSD_9pTLOeZMcD');
       })();
     </script>
+    <link rel="stylesheet" href="./style.css" />
     <!-- <link rel="icon" type="image/svg" href="./images/drone.svg" /> -->
   </head>
   <body>
-    <!-- <load src="./partials/header.html" /> -->
-
     <!-- header -->
 
-        <header class="header-container">
+    <header class="header-container">
       <div class="header">
         <nav class="header-nav">
           <a href="index.html" width="20" height="20" class="header-link">
@@ -46,7 +51,7 @@
           </a>
 
           <ul class="header-list">
-            <li class="header-item">
+               <li class="header-item">
               <a href="./index.html" class="header-page current">Main</a>
             </li>
 
@@ -54,21 +59,26 @@
               <a href="./portfolio.html" class="header-page">Portfolio</a>
             </li>
 
-            <li class="header-item">
+            <!-- <li class="header-item">
               <a href="" class="header-page">Feedback</a>
-            </li>
+            </li> -->
           </ul>
         </nav>
         <address class="address-box">
           <ul class="address-list">
-            <li class="address-item">
-              <a href="tel:+4550231091" class="address-link">+4550231091</a>
+           <li class="address-item">
+              <svg class="address-icon" width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              <a href="tel:+4550231091" class="address-link-footer"
+                >+4550231091</a
+              >
             </li>
-            <li class="address-item">
+            <!-- <li class="address-item">
               <a href="mailto:polikon86@gmail.com" class="address-link"
                 >polikon86@gmail.com</a
               >
-            </li>
+            </li> -->
           </ul>
         </address>
         <button
@@ -157,7 +167,7 @@
             months and was a very challenging one.
           </p>
         </li>
-         <li class="projects-item">
+        <li class="projects-item">
           <img src="./images/man_1.jpg" alt="" class="project-image" />
           <h3 class="image-title">Name of Work?</h3>
           <p class="image-description">
@@ -184,51 +194,71 @@
     <!-- Message form -->
 
     <section class="form">
-      <h4 class="form-main-title">Let’s get started</h4>
-      <p class="form-desc">
-        Now that you know a lot about me, let me know if you are interested to
-        work with me.
-      </p>
-      <form
-        id="submitForm"
-        action="mailto:posvystak83@gmail.com"
-        method="post"
-        enctype="text/plain"
-        class="form-box"
-      >
-        <p class="form-title">Name</p>
-        <label for="form-name"></label>
-        <input
-          type="text"
-          name="name"
-          id="form-name"
-          class="name-sub"
-          placeholder=" Name"
-        />
-        <p class="form-title">Email</p>
-        <label for="form-email"></label>
-        <input
-          type="email"
-          name="email"
-          id="form-email"
-          class="email-sub"
-          placeholder=" E-mail"
-        />
-        <p class="form-title">Message</p>
-        <label for="form-message"></label>
-        <textarea
-          name="message"
-          id="form-message"
-          rows="5"
-          class="message-sub"
-          placeholder=" Skriv din besked..."
-        ></textarea>
+      <div class="form-case">
+        <div class="form-about">
+          <h4 class="form-main-title">Let’s get started</h4>
+          <p class="form-desc">
+            Now that you know a lot about me, let me know if you are interested
+            to work with me. Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Aliquid odio eum, inventore doloremque illo optio quas odit
+            blanditiis, consequatur corrupti excepturi libero quidem fugiat
+            dolorem asperiores, amet mollitia voluptatum officiis.
+          </p>
+        </div>
+        <form
+          id="submitForm"
+          action="mailto:posvystak83@gmail.com"
+          method="post"
+          enctype="text/plain"
+          class="form-box"
+        >
+          <p class="form-title">Name</p>
+          <label for="form-name"></label>
+          <input
+            type="text"
+            name="name"
+            id="form-name"
+            class="name-sub"
+            required
+          />
+          <p class="form-title">Email</p>
+          <label for="form-email"></label>
+          <input
+            type="email"
+            name="email"
+            id="form-email"
+            class="email-sub"
+            required
+          />
+          <p class="form-title">Message</p>
+          <label for="form-message"></label>
+          <textarea
+            name="message"
+            id="form-message"
+            rows="5"
+            class="message-sub"
+            placeholder=" Skriv din besked..."
+            required
+          ></textarea>
 
-        <button class="form-btn" type="submit" onclick="sendEmail()">
-          Send
-        </button>
-      </form>
+          <button class="form-btn" type="submit" onclick="sendEmail()">
+            Send
+          </button>
+        </form>
+      </div>
     </section>
+
+    <!-- Skroll to top -->
+    <div>
+      <button
+        class="myBtn"
+        onclick="topFunction()"
+        id="topBtn"
+        title="Go to top"
+      >
+        Top
+      </button>
+    </div>
 
     <!-- footer -->
 
@@ -256,18 +286,27 @@
         </ul>
         <address class="address-box-footer">
           <ul class="address-list-footer">
-            <li class="address-item-footer">Konstantyn Polishkevych</li>
+            <li class="address-item-footer"><b>Konstantyn Polishkevych</b></li>
             <li class="address-item-footer">
+              <svg class="address-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
               <a href="tel:+4550231091" class="address-link-footer"
                 >+4550231091</a
               >
             </li>
             <li class="address-item-footer">
+               <svg class="address-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
               <a href="mailto:polikon86@gmail.com" class="address-link-footer"
                 >polikon86@gmail.com</a
               >
             </li>
-            <li class="address-item-footer">Hurup Thy</li>
+            <li class="address-item-footer">
+               <svg class="address-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-address"></use>
+              </svg> Hurup Thy</li>
           </ul>
         </address>
       </div>
@@ -278,8 +317,8 @@
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu" type="button" data-modal-close>
-        <svg class="menu-icon" width="8" height="8">
-          <use href="./images/symbol-defs.svg#icon-x-close">X</use>
+        <svg class="menu-icon" width="24" height="24">
+          <use href="./images/symbol-defs.svg#icon-close">X</use>
         </svg>
       </button>
 
@@ -337,6 +376,11 @@
         </li>
       </ul>
     </div>
+
+    <!-- Scripts -->
+    <script src="./js/btnTop.js"></script>
+    <script src="./js/formSubmit.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
     <script src="./js/gallery.js" type="module"></script>
     <script src="index.js" type="module"></script>
