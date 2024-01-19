@@ -138,7 +138,7 @@ header {
   padding: 4px;
 }
 .header-item:hover,
-.header-item:focus{
+.header-item:focus {
   border: 1px solid black;
   transform: translateY(-5px);
   transition: 250ms;
@@ -157,14 +157,19 @@ header {
   .address-box {
     display: block;
   }
-  .address-item{
+  .address-item {
     display: flex;
     align-items: center;
     padding-top: 6px;
     padding-right: 20px;
   }
 }
-
+.header-page {
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
 .header-page.current {
   color: darkorange;
 }
@@ -232,7 +237,7 @@ header {
   margin-left: auto;
   margin-right: auto;
 
-  background: url(./images/mob_1.jpg);
+  background: url(./images/Background2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -297,6 +302,11 @@ header {
     margin-right: auto;
   }
   .hero-box {
+    background: url(./images/Background2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -432,7 +442,6 @@ header {
     width: 688px;
     font-size: 55px;
   }
- 
 }
 @media only screen and (min-width: 1440px) {
   .projects-title {
@@ -787,7 +796,7 @@ header {
   margin-right: 10px;
 }
 @media only screen and (min-width: 768px) {
-    .footer-container {
+  .footer-container {
     padding: 20px 40px;
   }
   .footer-list {

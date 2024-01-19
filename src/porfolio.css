@@ -210,16 +210,21 @@ header {
   padding: 8 10 15 10;
 }
 
-.player {
-  width: 300px;
-  padding-bottom: 10px;
-  border-radius: 4px;
+.video-box{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+ 
 }
 .local-video {
   width: 300px;
   padding-bottom: 10px;
 }
-
+@media only screen and (min-width: 768px) {
+  .video-box{
+    gap: 48px;
+  }
+}
 /**
   |============================
   | Footer
