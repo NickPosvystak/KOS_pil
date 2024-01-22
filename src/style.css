@@ -533,6 +533,21 @@ header {
 .gallery__link:hover {
   cursor: zoom-in;
 }
+.loadBtn{
+      font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #5221e6;
+    padding: 6px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* width: 100%; */
+}
 @media only screen and (min-width: 768px) {
   .main-container {
     padding: 40px;

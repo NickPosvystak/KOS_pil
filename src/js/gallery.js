@@ -4,6 +4,10 @@ console.log(galleryItems);
 
 const galleryList = document.querySelector('.gallery');
 galleryList.addEventListener('click', onClick);
+const loadMoreButton = document.getElementById('load-more');
+
+let currentIndex = 0; // Initial index
+const itemsPerPage = 2; // Number of items to load initially
 
 const imgItems = ({ preview, original, description }) => {
   return `
@@ -19,12 +23,24 @@ const imgItems = ({ preview, original, description }) => {
            </li>
   `;
 };
-const render = galleryItems => {
-  const galleryMarkup = galleryItems.map(item => imgItems(item));
+const render = (start, end) => {
+  const galleryMarkup = galleryItems
+    .slice(start, end)
+    .map(item => imgItems(item));
   galleryList.innerHTML = galleryMarkup.join('');
 };
 
-render(galleryItems);
+// Initial render
+render(0, itemsPerPage);
+
+loadMoreButton.addEventListener('click', () => {
+  currentIndex += itemsPerPage;
+  render(currentIndex, currentIndex + itemsPerPage);
+});
+
+galleryList.addEventListener('click', onClick);
+
+
 
 function onClick(event) {
   event.preventDefault();
