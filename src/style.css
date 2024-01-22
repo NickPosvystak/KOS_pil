@@ -569,7 +569,7 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding: 10 10 15 10;
+  padding: 10px 10px 15px 10px;
 }
 .form-title {
   font-size: 16px;
@@ -584,7 +584,7 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
-  padding: 16 10 20 10;
+  padding: 16px 10px 20px 10px;
 }
 .form-box {
   width: 300px;
